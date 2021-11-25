@@ -1,0 +1,68 @@
+goos: windows
+goarch: amd64
+pkg: go-codec-bench
+cpu: Intel(R) Core(TM) i7-10710U CPU @ 1.10GHz
+BenchmarkCBORSuite
+BenchmarkCBORSuite/options-false...
+BenchmarkCBORSuite/options-false.../Benchmark__Cborgen____Encode
+BenchmarkCBORSuite/options-false.../Benchmark__Cborgen____Encode-12         	   12914	     90369 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Cbor_______Encode
+BenchmarkCBORSuite/options-false.../Benchmark__Cbor_______Encode-12         	   26808	     46553 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Fxcbor_____Encode
+BenchmarkCBORSuite/options-false.../Benchmark__Fxcbor_____Encode-12         	   10000	    109196 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Gcbor______Encode
+BenchmarkCBORSuite/options-false.../Benchmark__Gcbor______Encode-12         	    4646	    268014 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Cborgen____Decode
+BenchmarkCBORSuite/options-false.../Benchmark__Cborgen____Decode-12         	   10000	    137244 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Cbor_______Decode
+BenchmarkCBORSuite/options-false.../Benchmark__Cbor_______Decode-12         	   10000	    107799 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Fxcbor_____Decode
+BenchmarkCBORSuite/options-false.../Benchmark__Fxcbor_____Decode-12         	    4988	    258758 ns/op
+BenchmarkCBORSuite/options-false.../Benchmark__Gcbor______Decode
+    bench_test.go:254: Error decoding into new TestStruc: gcbor: can't read map into **codec.StringUint64T
+--- FAIL: BenchmarkCBORSuite/options-false.../Benchmark__Gcbor______Decode
+--- FAIL: BenchmarkCBORSuite/options-false...
+BenchmarkCBORSuite/use-bufio-!bytes
+
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cborgen____Encode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cborgen____Encode-12         	   13220	     93134 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cbor_______Encode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cbor_______Encode-12         	   20830	     60055 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Fxcbor_____Encode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Fxcbor_____Encode-12         	   10000	    125715 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Gcbor______Encode
+
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Gcbor______Encode-12         	    4798	    265016 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cborgen____Decode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cborgen____Decode-12         	    9230	    136814 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cbor_______Decode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Cbor_______Decode-12         	    6667	    202122 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Fxcbor_____Decode
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Fxcbor_____Decode-12         	    3998	    301818 ns/op
+BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Gcbor______Decode
+    bench_test.go:254: Error decoding into new TestStruc: gcbor: can't read map into **codec.StringUint64T
+--- FAIL: BenchmarkCBORSuite/use-bufio-!bytes/Benchmark__Gcbor______Decode
+--- FAIL: BenchmarkCBORSuite/use-bufio-!bytes
+BenchmarkCBORSuite/reset-enc-dec...
+
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cborgen____Encode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cborgen____Encode-12         	   12626	     99669 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cbor_______Encode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cbor_______Encode-12         	   22461	     46485 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Fxcbor_____Encode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Fxcbor_____Encode-12         	    9229	    110511 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Gcbor______Encode
+
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Gcbor______Encode-12         	    4615	    292220 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cborgen____Decode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cborgen____Decode-12         	    9229	    151898 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cbor_______Decode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Cbor_______Decode-12         	   10000	    107892 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Fxcbor_____Decode
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Fxcbor_____Decode-12         	    4443	    279699 ns/op
+BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Gcbor______Decode
+    bench_test.go:254: Error decoding into new TestStruc: gcbor: can't read map into **codec.StringUint64T
+--- FAIL: BenchmarkCBORSuite/reset-enc-dec.../Benchmark__Gcbor______Decode
+--- FAIL: BenchmarkCBORSuite/reset-enc-dec...
+--- FAIL: BenchmarkCBORSuite
+FAIL

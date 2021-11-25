@@ -7,11 +7,13 @@ import "testing"
 
 func benchmarkCBORGroup(t *testing.B) {
 	benchmarkDivider()
+	t.Run("Benchmark__Cborgen____Encode", Benchmark__Cborgen____Encode)
 	t.Run("Benchmark__Cbor_______Encode", Benchmark__Cbor_______Encode)
 	t.Run("Benchmark__Fxcbor_____Encode", Benchmark__Fxcbor_____Encode)
 	t.Run("Benchmark__Gcbor______Encode", Benchmark__Gcbor______Encode)
 
 	benchmarkDivider()
+	t.Run("Benchmark__Cborgen____Decode", Benchmark__Cborgen____Decode)
 	t.Run("Benchmark__Cbor_______Decode", Benchmark__Cbor_______Decode)
 	t.Run("Benchmark__Fxcbor_____Decode", Benchmark__Fxcbor_____Decode)
 	t.Run("Benchmark__Gcbor______Decode", Benchmark__Gcbor______Decode)

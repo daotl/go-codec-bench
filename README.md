@@ -29,7 +29,10 @@ Other codecs compared include:
 
 # This branch is for CBOR benchmark
   
-See [cbor-bench_test.go]().
+This branch added [cbor-gen](https://github.com/daotl/cbor-gen) to the benchmark,
+types not supported by `cbor-gen` are removed.
+
+See [cbor-bench_test.go]() and [cborgen_test.go]().
 
 # Data
 
