@@ -26,7 +26,11 @@ Other codecs compared include:
   - [github.com/json-iterator/go](https://pkg.go.dev/github.com/json-iterator/go)
   - [github.com/mailru/easyjson](https://pkg.go.dev/github.com/mailru/easyjson)
   - [github.com/fxamacker/cbor/v2](https://pkg.go.dev/github.com/fxamacker/cbor/v2)
+
+# This branch is for CBOR benchmark
   
+See [cbor-bench_test.go]().
+
 # Data
 
 The data being serialized is a `TestStruc` randomly generated values.
